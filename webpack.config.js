@@ -29,21 +29,6 @@ module.exports = {
         ]
 
 
-    /*
-    module:{
-       // loaders
-       rules:[
-        {
-            loader:'babel-loader',
-            query:{
-                //presets:['es2015']
-            },
-            test:/\.js$/,
-            exclude: /node_modules/
-         }
-
-       ]
-     }*/
  
   }
 } 
