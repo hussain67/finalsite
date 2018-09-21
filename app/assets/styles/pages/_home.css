@@ -1,0 +1,13 @@
+.our-beginning__h2{
+margin-bottom: .5em;
+}
+
+.our-beginning__h3{
+
+}
+.got-started__h2{
+  margin-top: 1rem;
+ @mixin atMedium {
+    margin-top: 0px;
+    }
+}
