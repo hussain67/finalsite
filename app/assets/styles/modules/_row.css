@@ -3,6 +3,13 @@
   &--gutters {
     margin-right:-65px;
   }
+  &--t-padding{
+    padding-top: 80px;
+  }
+
+  &--gutters-small{
+    margin-right:-45px;
+  }
 
   &--gutters-large{
     margin-right:-100px;
@@ -15,6 +22,10 @@
 
   &--gutters-large > div{
     padding-right:100px;
+  }
+
+  &--gutters-small > div{
+    padding-right:45px;
   }
 
   @mixin atMedium{
@@ -40,5 +51,21 @@
     &__medium-8--smaller {
       width:63%;
     }
-}
+  }
+  @mixin atLarge {
+    &__large-4{
+      float:left;
+      width:33.33%;
+    }
+  }
+  
+  &--equal-height-at-large{
+    @mixin atLarge{
+      display:flex;
+    }
+    & > div{
+      float:none;
+      display:flex;
+    }
+  }
 }

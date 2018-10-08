@@ -1,13 +1,27 @@
 .wrapper {
+  overflow:hidden;
   padding-left: 18px;
   padding-right: 18px;
-  max-width:1000px;
+  max-width:1236px;
   margin-left: auto;
   margin-right: auto;
   
   &--medium {
-    max-width:976px;
+    max-width:976px;   
+    }
+
+&--no-padding-untill-medium {
+  padding-left:0;
+  padding-right: 0;
+
+  @mixin atMedium{
+  padding-left: 18px;
+  padding-right: 18px;
   }
+
+
+}
+   
   
   .wrapper {
     padding-left: 0px;
