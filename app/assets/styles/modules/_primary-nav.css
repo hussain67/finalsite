@@ -33,7 +33,7 @@
                 color:#FFF;
                 padding:.5rem;
                 font-weight:300;
-                background-color:rgba($mainBlue, .3);
+                background-color:rgba($mainBlue, .5s);
 
                 @mixin atMedium {
                     background-color:transparent;

@@ -966,7 +966,7 @@ a {
                 color:#FFF;
                 padding:.5rem;
                 font-weight:300;
-                background-color: rgba(47,85,114, .3);
+                background-color: rgba(47,85,114, .5s);
             }
 
 @media(min-width:800px){
@@ -1041,6 +1041,17 @@ a {
             opacity:1;
             z-index:1;
             transform: scale(1);
+    }
+
+.reveal-item {
+    opacity: 0;
+    transition: all 1.5s ease-out;
+    transform: scale(1.2);
+}
+
+.reveal-item--is-visible{
+     opacity:1;
+     transform:scale(1);
     }
 
 .our-beginning__h2{
