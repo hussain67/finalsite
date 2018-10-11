@@ -18,11 +18,21 @@
   padding-left: 18px;
   padding-right: 18px;
   }
-
-
 }
-   
-  
+ &__no-margin-untill-medium{
+   margin-left:0;
+   margin-right:0;
+
+   @mixin atMedium{
+    margin-left: auto;
+    margin-right: auto;
+   }
+
+
+ }
+
+
+
   .wrapper {
     padding-left: 0px;
     padding-right: 0px;

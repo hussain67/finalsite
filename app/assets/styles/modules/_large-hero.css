@@ -1,5 +1,7 @@
 .large-hero {
     position:relative;
+    
+    z-index: -1;
     border-bottom: 10px solid $mainBlue;
 
     &__image{
@@ -8,10 +10,14 @@
     &__text-content{
     position:absolute;
     text-align: center;
-    top:50%;
+    top:35%;
     left:0;
     width:100%;
-    transform: translateY(-50%)
+    
+    @mixin atMedium{
+      top:50%;
+      transform: translateY(-50%)
+    }
 }
 &__title{
     font-weight:300;

@@ -20,3 +20,10 @@
   font-size: 1.875rem;
   }
   }
+  
+.fa-bars{
+  font-size:40px;
+  color:#fff;  
+  cursor: pointer;
+ 
+}
