@@ -14,6 +14,6 @@ export default class MobileMenu{
        toggleTheMenu(){
         this.menuContent.classList.toggle('site-header__menu-content--is-visible');
         
-    }
+     }
 
 }

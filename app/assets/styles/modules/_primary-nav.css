@@ -5,22 +5,17 @@
     max-width: 500px;
    margin-left: auto;
    margin-right:auto;
-    
    
     @mixin atMedium{
         &--pull-right{
-            float: right;
-            
+            float: right;      
         }
     }
-
-   
-       
+ 
      ul{ 
         list-style-type:none;
         display: inline-block;
-              
-
+          
         @mixin atMedium{
             padding-right: 2rem;
         }
@@ -37,6 +32,10 @@
 
                 @mixin atMedium {
                     background-color:transparent;
+                    &.is-current-link{
+                        color:#fabb69;
+                    }
+
                 }
             }
         }

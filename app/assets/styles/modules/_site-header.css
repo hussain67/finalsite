@@ -2,10 +2,23 @@
 
 .site-header{  
     position:absolute; 
+    top: 0;
     
     z-index: 2;
-    background-color: rgba($mainBlue, .3);
+    background-color: rgba($mainBlue, .55);
+    transition:background-color .3s ease-out;
     width:100%;
+
+    @mixin atMedium {
+        position:fixed;
+        background-color: rgba($mainBlue, .3);
+
+        &--dark {
+            background-color: rgba($mainBlue, .9);
+        }
+    }
+
+
    
     &__img {
         display: block;
@@ -19,9 +32,14 @@
         @mixin atMedium{
         display: inline-block;
         position:absolute;
+        
         height:7rem;
-        background-color: $mainBlue;
-        padding:1.5rem;
+        .site-header--dark & {
+            transform: scale(.50);
+            padding:.5rem;
+            top:-30px;
+        }
+        
         }
     }
     &__menu-icon{
